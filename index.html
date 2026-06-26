@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Polaris · A living growth companion</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/theme.css">
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+  .hero {
+    background: var(--night);
+    background-image:
+      radial-gradient(800px 460px at 78% -12%, rgba(240,181,74,.28), transparent 58%),
+      radial-gradient(700px 520px at 8% 110%, rgba(138,99,207,.30), transparent 60%);
+    color: #fff; position: relative; overflow: hidden;
+    padding: 92px 24px 120px; text-align: center;
+  }
+  .hero .stars { position:absolute; inset:0; pointer-events:none; opacity:.7;
+    background-image:
+      radial-gradient(1.4px 1.4px at 20% 30%, #fff, transparent),
+      radial-gradient(1.2px 1.2px at 70% 22%, #fff, transparent),
+      radial-gradient(1.6px 1.6px at 40% 70%, #fff, transparent),
+      radial-gradient(1.2px 1.2px at 85% 60%, #fff, transparent),
+      radial-gradient(1.3px 1.3px at 55% 45%, #fff, transparent),
+      radial-gradient(1.1px 1.1px at 12% 80%, #fff, transparent),
+      radial-gradient(1.5px 1.5px at 92% 35%, #fff, transparent);
+    background-repeat: no-repeat; }
+  .hero .inner { position: relative; max-width: 880px; margin: 0 auto; }
+  .northstar { font-size: 2.4rem; color: var(--star); filter: drop-shadow(0 0 22px rgba(240,181,74,.65)); }
+  .hero h1 { color:#fff; font-size: clamp(2.6rem, 6.5vw, 5rem); line-height: 1.02; margin: 18px 0 14px; }
+  .hero h1 em { font-style: italic; color: var(--star-soft); }
+  .hero p { color:#cfcdf2; font-size: 1.2rem; max-width: 620px; margin: 0 auto 30px; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+  .pillarstrip { display:grid; grid-template-columns: repeat(4,1fr); gap:14px; margin:-70px auto 0; max-width:1120px; position:relative; z-index:3; }
+  @media (max-width:820px){ .pillarstrip{ grid-template-columns:repeat(2,1fr); } }
+  .pcard { background:var(--paper-2); border:1px solid var(--line); border-radius:18px; padding:20px; box-shadow:var(--shadow); }
+  .pcard .ic { width:44px;height:44px;border-radius:12px;display:grid;place-items:center;margin-bottom:10px; }
+  .pcard h4 { margin:0 0 4px; font-size:1.1rem; }
+  .pcard p { margin:0; font-size:.9rem; color:var(--ink-soft); }
+  .section { padding: 64px 0; }
+  .footer { text-align:center; padding: 40px 0 60px; color:var(--ink-faint); font-size:.9rem; }
+</style>
+</head>
+<body>
+  <header class="hero">
+    <div class="stars"></div>
+    <div class="inner reveal d1">
+      <i data-lucide="north-star" class="northstar"></i>
+      <h1>Find your <em>north star</em>,<br>one small step at a time.</h1>
+      <p>Polaris is a living growth companion for students, teachers and parents. Not a test. A picture of who you are becoming, that grows with you.</p>
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+        <a class="btn btn-star" href="/student.html"><i data-lucide="play"></i> Enter as a student</a>
+        <a class="btn btn-on-night" href="#doors"><i data-lucide="arrow-down"></i> Choose your role</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="pillarstrip">
+    <div class="pcard reveal d2"><div class="ic" style="background:rgba(138,99,207,.16)"><i data-lucide="user-round" style="color:var(--identity)"></i></div><h4>Identity</h4><p>Interests, values, personality, what lights you up.</p></div>
+    <div class="pcard reveal d3"><div class="ic" style="background:rgba(31,158,138,.16)"><i data-lucide="sparkles" style="color:var(--capability)"></i></div><h4>Capabilities</h4><p>Durable skills: communication, creativity, resilience.</p></div>
+    <div class="pcard reveal d4"><div class="ic" style="background:rgba(224,145,58,.18)"><i data-lucide="telescope" style="color:var(--trajectory)"></i></div><h4>Trajectory</h4><p>Career constellations, evolving, with real next steps.</p></div>
+    <div class="pcard reveal d5"><div class="ic" style="background:rgba(216,104,122,.16)"><i data-lucide="heart" style="color:var(--wellbeing)"></i></div><h4>Wellbeing</h4><p>Motivation, confidence, growth mindset. Private and gentle.</p></div>
+  </div>
+
+  <section class="section" id="doors">
+    <div class="wrap">
+      <div style="text-align:center;max-width:620px;margin:0 auto 34px">
+        <div class="eyebrow">One student. Three views.</div>
+        <h2 class="display-lg" style="margin-top:8px">Choose how you come in</h2>
+        <p class="lede">Each person has a role that takes minutes, not hours, all orbiting the same growing picture.</p>
+      </div>
+      <div class="doors">
+        <a class="door reveal d2" href="/student.html">
+          <div class="ico" style="background:rgba(240,181,74,.18)"><i data-lucide="rocket" style="color:#b9831f;width:26px;height:26px"></i></div>
+          <h3 style="margin:0">Student</h3>
+          <p class="muted" style="margin:0">Reflect, take tiny real-world quests, and watch yourself grow. You own your story.</p>
+          <span class="btn btn-ghost" style="margin-top:auto;width:fit-content">Enter <i data-lucide="arrow-right"></i></span>
+        </a>
+        <a class="door reveal d3" href="/teacher.html">
+          <div class="ico" style="background:rgba(31,158,138,.16)"><i data-lucide="users" style="color:#0f6c5e;width:26px;height:26px"></i></div>
+          <h3 style="margin:0">Teacher</h3>
+          <p class="muted" style="margin:0">See the whole child, not just marks. Drop a one-line observation, endorse real growth.</p>
+          <span class="btn btn-ghost" style="margin-top:auto;width:fit-content">Enter <i data-lucide="arrow-right"></i></span>
+        </a>
+        <a class="door reveal d4" href="/parent.html">
+          <div class="ico" style="background:rgba(216,104,122,.16)"><i data-lucide="hand-heart" style="color:#a83f52;width:26px;height:26px"></i></div>
+          <h3 style="margin:0">Parent</h3>
+          <p class="muted" style="margin:0">Support without pressure. A gentle monthly read and one helpful thing to do this week.</p>
+          <span class="btn btn-ghost" style="margin-top:auto;width:fit-content">Enter <i data-lucide="arrow-right"></i></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">Polaris · a prototype · built with care for students, teachers and parents.</div>
+
+  <script>lucide.createIcons();</script>
+</body>
+</html>
